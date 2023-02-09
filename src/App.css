@@ -1,0 +1,49 @@
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.react-pdf__Page__annotations {
+  display: none;
+}
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.document {
+  position: relative !important;
+  height: 80vh;
+  width: 100vw;
+}
+.page {
+  position: absolute !important;
+  top: 10%;
+  left: 50%;
+  transform-origin: left;
+  transition: all 0.5s;
+  perspective: 1500px;
+}
+.page-front-back {
+  transform: translateX(-50%);
+}
+.page-right {
+  z-index: 999;
+}
+.page-left {
+  z-index: 999;
+  transition: all 0.5s;
+  transform: rotateY(-180deg);
+  transform: translateX(-101%);
+}
